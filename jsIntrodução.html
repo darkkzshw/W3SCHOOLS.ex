@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificando Conteúdos</title>
+</head>
+<body>
+    <h1>O que o JavaScript faz?</h1>
+    <p id="demo">JavaScript pode esconder elementos HTML.</p>
+    <input type="button" value="Clique em mim!" onclick="clicar()">
+    <input type="button" value="Reverter" onclick="reverter()">
+
+    <p id="demo1">JavaScript pode mudar um conteúdo HTML.</p>
+    <input type="button" value="Clique em mim!" onclick="clicar1()">
+    <input type="button" value="Reverter" onclick="reverter1()">
+
+    <p id="demo2">JavaScript pode mudar o estilo de um elemento HTML (nesse caso, aumentar a fonte).</p>
+    <input type="button" value="Clique em mim!" onclick="clicar2()">
+    <input type="button" value="Reverter" onclick="reverter2()">
+
+    <p id>JavaScript pode mostrar elementos HTML que estão escondidos.</p>
+    <p id="demo3" style="display:none">Olá JavaScript!</p>
+    <input type="button" value="Clique em mim!" onclick="clicar3()">
+    <input type="button" value="Reverter" onclick="reverter3()">
+
+    <script>
+
+            //BOTAO PARA ESCONDER O QUE ESTAVA ESCRITO
+
+         function clicar() {
+            var p = document.getElementById('demo')
+            p.style.display = 'none'
+        }
+        function reverter() {
+            var p = document.getElementById('demo')
+            p.style.display = 'block'
+        }
+
+            //MODIFICAR AS PALAVRAS
+
+        function clicar1() {
+            var p = document.getElementById('demo1')
+            p.innerHTML = 'Olá JavaScript!'
+        }
+        function reverter1() {
+            var p = document.getElementById('demo1')
+            p.innerHTML = 'JavaScript pode mudar um conteúdo HTML'
+        }
+
+            //AUMENTAR A FONTE COM 'CSS'
+
+        function clicar2() {
+            var p = document.getElementById('demo2')
+            p.style.fontSize = '25px'
+        }
+        function reverter2() {
+            var p = document.getElementById('demo2')
+            p.style.fontSize = '16px'
+        }
+
+            //MOSTRAR ELEMENTOS ESCONDIDOS
+
+        function clicar3() {
+            var p = document.getElementById('demo3')
+            p.style.display = 'block'
+        }
+        function reverter3() {
+            var p = document.getElementById('demo3')
+            p.style.display = 'none'
+        }
+
+
+       
+    </script>
+
+</body>
+</html>

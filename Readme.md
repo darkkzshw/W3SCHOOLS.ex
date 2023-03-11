@@ -1,0 +1,1 @@
+Olá, esse projeto mostra a minha evolução com base nos exercicios propostos pela W3SCHOOLS sobre o JavaScript, caso você esteja lendo isso, espero que goste de vê-la ^-^
