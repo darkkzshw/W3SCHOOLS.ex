@@ -5,6 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modificando Conteúdos</title>
+
+    <style>
+        body {
+            background-color: rgb(207, 233, 255);
+        }
+        input#img {
+            width: 250px;
+            margin-left: 14px;
+            
+        }
+        input#img2 {
+            width: 250px;
+            margin-left: 14px;
+        }
+        input#sorr {
+            margin-left: 50px;
+        }
+        input#sor {
+            margin-left: 35px;
+        }
+        p#demo4 {
+            margin-left: 15px;
+        }
+    </style>
 </head>
 <body>
     <h1>O que o JavaScript faz?</h1>
@@ -24,6 +48,15 @@
     <p id="demo3" style="display:none">Olá JavaScript!</p>
     <input type="button" value="Clique em mim!" onclick="clicar3()">
     <input type="button" value="Reverter" onclick="reverter3()">
+
+    <p>JavaScript pode modificar valores atribuídos ao HTML.</p>
+    <p>Nesse caso, o JavaScript muda o valor do atributo src(source/fonte) de uma imagem.</p>
+    <input id="sor" type="button" value="Sorrir" onclick="sorrir()">
+    <input id="sorr" type="button" value="Parar de sorrir" onclick="naoSorrir()"> <br><br>
+    <input id="img" type="image" src="sorrindoNao.png" alt="" style='display:block':>
+    <input id="img2" type="image" src="sorrindoSim.png" alt="" style="display:none">
+    <p id="demo4"></p>
+    
 
     <script>
 
@@ -70,7 +103,20 @@
             var p = document.getElementById('demo3')
             p.style.display = 'none'
         }
-
+        function sorrir() {
+            var img = document.getElementById('img')
+            var img2 = document.getElementById('img2')
+            img.style.display = 'none'
+            img2.style.display = 'block'
+        }
+        function naoSorrir() {
+            var img = document.getElementById('img')
+            var img2 = document.getElementById('img2')
+            img2.style.display = 'none'
+            img.style.display = 'block'
+            var p = document.getElementById('demo4')
+            p.innerHTML = 'Fofo né :3'
+        }
 
        
     </script>
