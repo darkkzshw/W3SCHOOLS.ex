@@ -5,3 +5,5 @@ Portando caso queira experiênciar 100% do conteúdo, você DEVE ter a pasta exa
 Bom, pelo menos essa é a minha teoria KKKKKKKKKKKKKKKKKKK
 
 Caso não funcione você pode ver as imagens ".png" e deduzir que a página se comportaria trocando a imagem que aparece na tela, fazendo o personagem (eu) sorrir e parar de sorrir
+
+-Estudo descontinuado, ficou só pelo exercício fofo mesmo KKKKKKKKKK
